@@ -2,8 +2,10 @@
 
 ## Unreleased
 
-- License is MIT. The commercial Pro, Agency, and Launch grants no longer apply.
-- Landing no longer sells those licenses.
+- MIT license copyright holder set to WHH Treasures.
+- Landing no longer includes the old purchase / package-proof section.
+- README documents environment variables, deploy, live demo, and contributing.
+- Support and security contacts point at WHH Treasures / GitHub.
 
 ## 1.0.0 — 2026-08-24
 
@@ -17,7 +19,7 @@ First source release.
 - Invoice records and print layout (no online payment)
 - Activity timeline and in-app notifications (optional Resend HTTP adapter)
 - Harbor Studio seed and `DEMO_MODE` read-only hosted demo
-- Buyer docs: Quick Start, environment, Supabase, customization, deployment, troubleshooting, upgrade
+- Docs: Quick Start, environment, Supabase, customization, deployment, troubleshooting, upgrade
 - Netlify: `netlify.toml` (Node 24, `pnpm build`). Adapter is not pinned. `DEMO_MODE` stays in the host UI.
 - `pnpm pack:zip` / `pnpm release:check` (secret scan + ZIP + clean install)
 

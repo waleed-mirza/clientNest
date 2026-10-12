@@ -1,19 +1,19 @@
 # ClientNest progress
 
-Living tracker. The Word sales plan was removed on 12 Oct 2026.
+Living tracker for the MIT open-source portal starter.
 Update this file whenever plan-related work starts or finishes. Do not mark an item done unless the exit criteria are actually met.
 
-**North star:** superseded 12 Oct 2026. The source is MIT. The earlier goal was $100 net monthly template revenue by 23 November 2026.
+**North star:** ship a reliable MIT-licensed agency client portal starter that a developer can install from docs.
 
 ## Current status
 
 | Field                | Value                                                                                                        |
 | -------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Plan week            | **Week 8 in progress.** The hosted demo is live. The license is MIT as of 12 Oct 2026.                        |
-| Phase                | Open source. Paid Launch / Pro / Agency grants no longer apply.                                              |
-| Allowed product work | Week 8 docs and demo. No paid license, Stripe, AI, chat, SSO, or i18n.                                       |
-| Blocked until        | Nothing in the tree. The founder can make the new GitHub repository public.                                  |
-| Last updated         | 12 Oct 2026 (repository replaced so the public remote has one MIT commit)                                    |
+| Phase                | Open source.                                                                                                 |
+| Allowed product work | Week 8 docs and demo. No Stripe, AI, chat, SSO, or i18n.                                                     |
+| Blocked until        | Nothing in the tree. Repo visibility is a founder decision (agents must not change it).                      |
+| Last updated         | 12 Oct 2026 (MIT open-source polish verified: build + secret scan)                                           |
 
 ## How to use
 
@@ -26,49 +26,49 @@ Update this file whenever plan-related work starts or finishes. Do not mark an i
 
 ## Week 1 — Problem research (24–30 Aug 2026)
 
-**Required output:** 15 interviews, competitor notes, three mockups, buyer-language log.
+**Required output:** 15 interviews, competitor notes, three mockups, language log.
 
 | Item                                                            | Status                     | Evidence                                                                                    |
 | --------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
 | One-sentence concept                                            | done                       | Landing page hero + `AGENTS.md`                                                             |
 | Three polished mockups (dashboard, project workspace, approval) | done                       | `/mockups/dashboard`, `/mockups/project`, `/mockups/approval` (static, Harbor Studio story) |
-| Landing page (promise, screenshots, stack, price, waitlist)     | done                       | `/` — MIT landing. Sales files removed 12 Oct 2026.                                         |
-| List of 30 target buyers                                        | skipped                    | Kept in plan as skipped. Sales file removed 12 Oct 2026.                                    |
-| ≥15 short conversations                                         | skipped                    | Kept in plan as skipped. Sales file removed 12 Oct 2026.                                    |
-| Buyer-language / objection log                                  | done (public threads only) | Notes removed with sales files on 12 Oct 2026.                                              |
-| Competitor notes                                                | done (secondary research)  | Notes removed with sales files on 12 Oct 2026.                                              |
-| Schedule first 5 buyer conversations                            | skipped                    | Kept in plan; founder speaks as freelancer buyer                                            |
+| Landing page (promise, screenshots, stack, waitlist)            | done                       | `/` — MIT landing.                                                                          |
+| List of 30 target users                                         | skipped                    | Kept in plan as skipped.                                                                    |
+| ≥15 short conversations                                         | skipped                    | Kept in plan as skipped.                                                                    |
+| Language / objection log                                        | done (public threads only) | Historical notes removed 12 Oct 2026.                                                       |
+| Competitor notes                                                | done (secondary research)  | Historical notes removed 12 Oct 2026.                                                       |
+| Schedule first 5 conversations                                  | skipped                    | Kept in plan; founder speaks as freelancer user                                             |
 
 ## Week 2 — Validate positioning (31 Aug–6 Sep 2026)
 
 | Item                         | Status                  | Evidence                                                |
 | ---------------------------- | ----------------------- | ------------------------------------------------------- |
 | 30 total conversations       | skipped                 | Plan row kept. Not a build blocker.                     |
-| 5 strong purchase intents    | skipped                 | Founder intent as freelancer.                           |
+| 5 strong adoption intents    | skipped                 | Founder intent as freelancer.                           |
 | 10 qualified waitlist emails | skipped                 | Lead form removed 12 Oct 2026.                          |
 | Landing conversion notes     | skipped                 | Optional later.                                         |
-| Shortlist objections         | done (public + founder) | Notes removed with sales files on 12 Oct 2026.          |
+| Shortlist objections         | done (public + founder) | Historical notes removed 12 Oct 2026.                   |
 
-**Gate (plan, still in the Word doc):** if fewer than 3 strong first-party responses, do not complete the product unchanged.
+**Gate (plan):** if fewer than 3 strong first-party responses, do not complete the product unchanged.
 
 **23 Aug founder decision:** interviews are unnecessary for starting v1. Rows stay here as `skipped`. See `DECISIONS.md`.
 
-## Week 3 — Presell and lock scope (7–13 Sep 2026)
+## Week 3 — Lock scope (7–13 Sep 2026)
 
-| Item                                    | Status      |
-| --------------------------------------- | ----------- |
-| 2 early-access sales preferred          | skipped     | Not required to build; still useful before taking payment                                                             |
-| PRD / screen map / schema locked        | in progress | Word plan + `clientnest-scope`; workspaces through projects are in `supabase/migrations`                              |
-| v1 exclusions locked                    | done        | `clientnest-scope` + DECISIONS.md                                                                                     |
-| Storefront payout eligibility rechecked | done        | Historical only. Checkout notes removed 12 Oct 2026.                                                     |
+| Item                                    | Status      | Evidence                                                                                                              |
+| --------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------- |
+| Early-access installs preferred         | skipped     | Not required to build                                                                                                 |
+| PRD / screen map / schema locked        | in progress | Scope notes + migrations; workspaces through projects are in `supabase/migrations`                                    |
+| v1 exclusions locked                    | done        | `AGENTS.md` + `DECISIONS.md`                                                                                          |
+| Storefront / checkout eligibility       | removed     | Not applicable under MIT. Historical checkout notes removed 12 Oct 2026.                                              |
 
 ## Week 4 — Engineering foundation (14–20 Sep 2026)
 
-Closed 23 Aug 2026. Git still has no remote.
+Closed 23 Aug 2026.
 
 | Item                                                   | Status | Evidence                                                                                                                                                                                                       |
 | ------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Git repo, README, AGENTS.md, env example, decision log | done   | Repo initialized (no remote). Prettier 3.9.6.                                                                                                                                                                  |
+| Git repo, README, AGENTS.md, env example, decision log | done   | Repo initialized. Prettier 3.9.6.                                                                                                                                                                              |
 | Next.js + TS + Tailwind + `src/` + pnpm + Node 24      | done   | Next 16.3.2, Tailwind 4.3.3, pnpm 10.34.5, Node 24.13.0                                                                                                                                                        |
 | ESLint, Prettier, Vitest, Playwright, GitHub Actions   | done   | `pnpm lint`, `format:check`, `typecheck`, Vitest, Playwright, `pnpm build` exit 0. Workflow: `.github/workflows/ci.yml`                                                                                        |
 | Hosted Supabase, migrations, seed                      | done   | Hosted development project. Migrations `20260823120000` + `20260823140000` on remote. `pnpm supabase:seed` created Harbor Studio demo users. Project ref removed 12 Oct 2026. |
@@ -120,45 +120,38 @@ Visual system (23 Aug 2026, not a plan week): Harbor tokens, IBM Plex + Source S
 
 Interaction polish (7 Sep 2026): `/app` page fade-in, delayed pine nav progress, list-shaped `PageSkeleton`, button hover/press and pending spinner via `ActionButton`. No new dependency. `prefers-reduced-motion` still wins.
 
-## Week 8 — Beta and direct launch (12–18 Oct 2026)
+## Week 8 — Docs, demo, and open-source publish (12–18 Oct 2026)
 
-Software closed 24 Aug 2026. Human launch steps remain.
-
-**Launch verification (7 Sep 2026):** A checkout self-buy and refund were completed. Checkout details were removed from the tree on 12 Oct 2026.
+Software closed 24 Aug 2026. Publish polish continues.
 
 | Item                                                       | Status                       | Evidence                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Buyer docs (Quick Start through troubleshooting + upgrade) | done                         | `docs/*.md`, `/docs`, `/docs/quick-start`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| License, changelog, support policy                         | done                         | `LICENSE` (MIT, 12 Oct 2026), `CHANGELOG.md`, `SUPPORT.md`, `SECURITY.md`, `/license`                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Install docs (Quick Start through troubleshooting + upgrade) | done                       | `docs/*.md`, `/docs`, `/docs/quick-start`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| License, changelog, support policy                         | done                         | `LICENSE` (MIT, copyright WHH Treasures), `CHANGELOG.md`, `SUPPORT.md`, `SECURITY.md`, `/license`                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Seeded demo story + Storage files                          | done                         | `supabase/seed.sql` + `supabase/demo-files/` + `pnpm demo:files` / `pnpm demo:reset`                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Read-only hosted demo                                      | done                         | `DEMO_MODE=true` blocks writes; `/login` offers one-click Owner/Client (no public password prompt)                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Buyer ZIP + secret scan + clean-install                    | done                         | 7 Sep 2026 repack (includes Harbor interaction polish): `pnpm release:check` → `SECRET_SCAN_OK`, `PACKED clientnest-v1.0.0.zip` (216 files), `CLEAN_INSTALL_OK`, `RELEASE_OK`. ZIP audit: only `.env.example`, no internal docs (`AGENTS`/`PROGRESS`/`DECISIONS`/`marketing`/plan docx), buyer files present. Path: `dist/clientnest-v1.0.0.zip`.                                                                                                                                                                               |
-| Listing copy, FAQ, demo script                             | removed                      | Sales files removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Buyer-readiness landing polish                             | done                         | Walkthrough, one-click demo, and source proof remain. Lead form removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Live Lemon variant recheck                                 | removed                      | Checkout details removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Storefront payout recheck                                  | removed                      | Checkout notes removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Lemon Squeezy live checkout                                | removed                      | Checkout details removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Five scheduled beta installs                               | not started                  | Sales kit removed 12 Oct 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Live hosted demo URL                                       | done                         | https://clientnest-app.netlify.app — Netlify site `clientnest-app` (git-connected) on Supabase project `clientnest-demo`; Harbor logins, Sam/Alex story, delete and Approve blocked as read-only. 24 Aug 2026.                                                                                                                                                                                                                                                                                                                  |
+| Release ZIP + secret scan + clean-install                  | done                         | `pnpm release:check` → `SECRET_SCAN_OK`, packed ZIP, `CLEAN_INSTALL_OK`. Path pattern: `dist/clientnest-v1.0.0.zip`.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Landing polish                                             | done                         | Walkthrough and one-click demo remain. Purchase/package-proof UI and lead form removed.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Live hosted demo URL                                       | done                         | https://clientnest-app.netlify.app — optional in README; code uses `NEXT_PUBLIC_DEMO_URL` when set. Harbor logins, Sam/Alex story, read-only.                                                                                                                                                                                                                                                                                                                                                                                   |
+| MIT open-source polish                                     | done                         | LICENSE → WHH Treasures; SUPPORT/SECURITY contacts; README env/deploy/demo/contributing; removed `.grok/` and buyer-proof UI; `pnpm build` exit 0; `pnpm secret:scan` → `SECRET_SCAN_OK 219 files`. PR: `cursor/mit-oss-publish-polish-262a`.                                                                                                                                                                                                                                                                                 |
 
-## Weeks 9–13 (not started)
+## Weeks 9–13 (optional follow-ups)
 
 | Week | Objective                             | Status      |
 | ---- | ------------------------------------- | ----------- |
-| 9    | Codester, GitHub Lite, first tutorial | not started |
-| 10   | Qualified distribution                | not started |
-| 11   | Conversion improvement                | not started |
-| 12   | v1.0.1 + second launch                | not started |
-| 13   | Revenue audit vs $100 net             | not started |
+| 9    | Tutorials and distribution notes      | not started |
+| 10   | Broader discovery                     | not started |
+| 11   | Install funnel improvements           | not started |
+| 12   | v1.0.1 maintenance release            | not started |
+| 13   | Adoption / support review             | not started |
 
 ## Definition of success (not claimed)
 
-- [ ] ≥3 paid licenses in 30 days, or mix producing ≥$100 net
-- [ ] New buyer installs from docs in ≤30 minutes
+- [ ] New installs from docs in ≤30 minutes
 - [ ] No known critical authorization, isolation, or file-access defects
-- [ ] Support effort <2 hours per customer
-- [ ] ≥200 qualified product-page visits / month by end of Month 3
+- [ ] Support load stays manageable for a solo maintainer
+- [ ] Public demo stays healthy and read-only
 
-## Tooling (now vs later)
+## Tooling
 
 Authoritative list: `TOOLING.md`.

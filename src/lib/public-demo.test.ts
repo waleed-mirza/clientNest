@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { publicDemoUrl } from "./storefront";
+import { publicDemoUrl } from "./public-demo";
 
 const demoKey = "NEXT_PUBLIC_DEMO_URL";
 const original = process.env[demoKey];

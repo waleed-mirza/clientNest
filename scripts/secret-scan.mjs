@@ -28,7 +28,7 @@ const hits = [];
 for (const file of files) {
   const rel = posixPath(file);
   if (forbiddenInZip.some((re) => re.test(rel))) {
-    hits.push(`${rel}: file is not allowed in the buyer ZIP`);
+    hits.push(`${rel}: file is not allowed in the release package`);
     continue;
   }
   if (binary.test(rel)) continue;

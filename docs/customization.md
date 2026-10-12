@@ -1,6 +1,6 @@
 # Customization
 
-Buyers rebrand in a weekend by editing CSS variables and, in the app, the owner Settings page. Do not scatter new hex values in components.
+Rebrand in a weekend by editing CSS variables and, in the app, the owner Settings page. Do not scatter new hex values in components.
 
 ## Visual tokens
 
