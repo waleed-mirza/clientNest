@@ -1,0 +1,67 @@
+{
+  "name": "clientnest",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "ClientNest — agency client portal starter (Next.js + Supabase)",
+  "engines": {
+    "node": ">=24 <25",
+    "pnpm": ">=10 <11"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "rls:test": "node scripts/rls-test.mjs",
+    "supabase": "supabase",
+    "supabase:login": "supabase login",
+    "supabase:setup": "node scripts/supabase-setup.mjs",
+    "supabase:demo": "node scripts/supabase-demo-project.mjs",
+    "supabase:seed": "supabase db query --linked -f supabase/seed.sql",
+    "supabase:smtp": "node scripts/push-smtp.mjs",
+    "demo:files": "node scripts/seed-files.mjs",
+    "demo:reset": "node scripts/demo-reset.mjs",
+    "secret:scan": "node scripts/secret-scan.mjs",
+    "pack:zip": "node scripts/pack-zip.mjs",
+    "clean:install": "node scripts/clean-install.mjs",
+    "release:check": "node scripts/release-check.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.12.4",
+    "@supabase/supabase-js": "2.112.3",
+    "lucide-react": "1.33.0",
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "20.19.43",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.2",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.9.6",
+    "supabase": "2.115.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.1.11"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "supabase"
+    ]
+  },
+  "packageManager": "pnpm@10.34.5"
+}

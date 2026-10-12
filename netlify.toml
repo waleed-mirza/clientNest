@@ -1,0 +1,9 @@
+# Netlify + Next.js 16. The OpenNext adapter is injected at build time.
+# Do not pin @netlify/plugin-nextjs here — pinning opts out of adapter updates.
+# Do not put secrets or DEMO_MODE in this file. Set those in the Netlify UI.
+
+[build]
+  command = "pnpm build"
+
+[build.environment]
+  NODE_VERSION = "24"

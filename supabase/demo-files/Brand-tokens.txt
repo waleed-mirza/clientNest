@@ -1,0 +1,11 @@
+Harbor Studio — fictional brand tokens for the ClientNest demo.
+Not a real client. Safe to ship in the ZIP.
+
+Paper        #e8e6df
+Ink          #1a1714
+Muted        #5c564f
+Surface      #f3f1ea
+Accent pine  #21554e
+Danger rust  #9a3412
+
+Type: IBM Plex Sans (UI), Source Serif 4 (letterhead), IBM Plex Mono (IDs).
