@@ -1,6 +1,6 @@
 # Third-party notices
 
-ClientNest ships other people’s packages. They keep their own licenses. Runtime and fonts a buyer redistributes with an end product:
+ClientNest ships other people’s packages. They keep their own licenses. Runtime and fonts you may redistribute with an end product:
 
 | Package / font                           | License | Notes                                             |
 | ---------------------------------------- | ------- | ------------------------------------------------- |
@@ -15,4 +15,4 @@ ClientNest ships other people’s packages. They keep their own licenses. Runtim
 
 Dev tools (Vitest, Playwright, ESLint, Prettier, TypeScript, Supabase CLI) are listed in `package.json` `devDependencies` and are not required at runtime.
 
-There are **no** paid stock photos, paid icon sets, or paid fonts. If you add any, you must have redistribution rights before you put them in a client ZIP.
+There are **no** paid stock photos, paid icon sets, or paid fonts. If you add any, you must have redistribution rights before you redistribute them.

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { isAuthForm, isPublicPath } from "./public-path";
 
 describe("public paths", () => {
-  it("lets buyers read docs and the license without a session", () => {
+  it("lets visitors read docs and the license without a session", () => {
     expect(isPublicPath("/")).toBe(true);
     expect(isPublicPath("/docs")).toBe(true);
     expect(isPublicPath("/docs/quick-start")).toBe(true);

@@ -1,5 +1,5 @@
 /**
- * Unpack the buyer ZIP into a temp folder and `pnpm install --frozen-lockfile`.
+ * Unpack the release ZIP into a temp folder and `pnpm install --frozen-lockfile`.
  * Does not start Supabase. Use after `pnpm pack:zip`.
  */
 import { mkdtempSync, rmSync, existsSync, readdirSync } from "node:fs";

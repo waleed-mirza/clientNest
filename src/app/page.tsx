@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/marketing/site-header";
-import { BuyerProof } from "@/components/marketing/buyer-proof";
 import { ColorSchemeToggle } from "@/components/theme/color-scheme-toggle";
 import { primaryButtonClass, secondaryButtonClass } from "@/components/app/styles";
 import { isDemoMode } from "@/lib/demo/mode";
 import { sourceRepoUrl } from "@/lib/repo";
-import { publicDemoUrl } from "@/lib/storefront";
+import { publicDemoUrl } from "@/lib/public-demo";
 
 const included = [
   "Email login, invites, and role-secured client access",
@@ -167,8 +166,6 @@ export default function Home() {
               : "opens the local sign-in page. The public demo offers one-click Owner and Client views."}
           </p>
         </section>
-
-        <BuyerProof />
 
         <section className="grid gap-10 md:grid-cols-2">
           <div>
