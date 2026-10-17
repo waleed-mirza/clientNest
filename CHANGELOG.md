@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Docs cross-links use relative `./slug.md` paths so they work on GitHub; the live `/docs` renderer rewrites them to `/docs/slug`.
 - MIT license copyright holder set to WHH Treasures.
 - Landing no longer includes the old purchase / package-proof section.
 - README documents environment variables, deploy, live demo, and contributing.

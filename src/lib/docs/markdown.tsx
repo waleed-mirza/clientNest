@@ -1,5 +1,12 @@
 import type { ReactNode } from "react";
 
+/** Map GitHub-friendly `./slug.md` links to live `/docs/slug` routes. */
+export function resolveDocHref(href: string): string {
+  const relativeMd = href.match(/^\.\/([a-z0-9-]+)\.md$/i);
+  if (relativeMd) return `/docs/${relativeMd[1]}`;
+  return href;
+}
+
 function inline(text: string, keyPrefix: string): ReactNode[] {
   const nodes: ReactNode[] = [];
   const pattern = /(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
@@ -22,7 +29,7 @@ function inline(text: string, keyPrefix: string): ReactNode[] {
     } else {
       const link = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
       if (link) {
-        const href = link[2];
+        const href = resolveDocHref(link[2]);
         const external = href.startsWith("http://") || href.startsWith("https://");
         nodes.push(
           <a
