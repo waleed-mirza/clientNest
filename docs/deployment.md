@@ -7,7 +7,7 @@ A hosted demo can run on Netlify. Your own install may use Vercel or Netlify. `n
 ## Before you deploy
 
 1. A hosted Supabase project with all migrations applied (`pnpm supabase:setup` or `db push`).
-2. Auth Site URL and Redirect URLs set to the production origin (see [Supabase setup](/docs/supabase)).
+2. Auth Site URL and Redirect URLs set to the production origin (see [Supabase setup](./supabase.md)).
 3. Optional: Resend domain + `pnpm supabase:smtp` so real clients receive reset mail.
 4. Optional: `pnpm supabase:seed` only on a **demo** project, never on a client’s production data.
 

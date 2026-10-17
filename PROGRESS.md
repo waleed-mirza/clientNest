@@ -13,7 +13,7 @@ Update this file whenever plan-related work starts or finishes. Do not mark an i
 | Phase                | Open source.                                                                                                 |
 | Allowed product work | Week 8 docs and demo. No Stripe, AI, chat, SSO, or i18n.                                                     |
 | Blocked until        | Nothing in the tree. Repo visibility is a founder decision (agents must not change it).                      |
-| Last updated         | 12 Oct 2026 (MIT open-source polish verified: build + secret scan)                                           |
+| Last updated         | 17 Oct 2026 (docs relative links for GitHub + live site)                                                     |
 
 ## How to use
 
@@ -134,6 +134,7 @@ Software closed 24 Aug 2026. Publish polish continues.
 | Landing polish                                             | done                         | Walkthrough and one-click demo remain. Purchase/package-proof UI and lead form removed.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Live hosted demo URL                                       | done                         | https://clientnest-app.netlify.app — optional in README; code uses `NEXT_PUBLIC_DEMO_URL` when set. Harbor logins, Sam/Alex story, read-only.                                                                                                                                                                                                                                                                                                                                                                                   |
 | MIT open-source polish                                     | done                         | LICENSE → WHH Treasures; SUPPORT/SECURITY contacts; README env/deploy/demo/contributing; removed `.grok/` and buyer-proof UI; `pnpm build` exit 0; `pnpm secret:scan` → `SECRET_SCAN_OK 219 files`. PR: `cursor/mit-oss-publish-polish-262a`.                                                                                                                                                                                                                                                                                 |
+| Docs links work on GitHub and the live site                | done                         | `docs/quick-start.md` + `docs/deployment.md` use `./slug.md`; `resolveDocHref` maps them to `/docs/slug` on the site. Vitest covers the rewrite.                                                                                                                                                                                                                                                                                                                                                                              |
 
 ## Weeks 9–13 (optional follow-ups)
 

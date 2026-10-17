@@ -12,5 +12,7 @@ test("quick start has numbered install steps", async ({ page }) => {
   await page.goto("/docs/quick-start");
   await expect(page.getByRole("heading", { name: "Quick Start" })).toBeVisible();
   await expect(page.getByText("pnpm supabase:setup", { exact: true })).toBeVisible();
-  await expect(page.getByRole("main").getByRole("link", { name: "Troubleshooting" })).toBeVisible();
+  const troubleshooting = page.getByRole("main").getByRole("link", { name: "Troubleshooting" });
+  await expect(troubleshooting).toBeVisible();
+  await expect(troubleshooting).toHaveAttribute("href", "/docs/troubleshooting");
 });

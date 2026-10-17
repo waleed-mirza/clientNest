@@ -35,7 +35,7 @@ Docker is not required. The app talks to hosted Supabase.
 12. Create an account at `/signup`, or sign in with a demo user from the table below if you seeded.
 13. New accounts land on `/onboarding` to name the workspace. That first user is the owner.
 14. Invite a teammate or client from `/app/team`. They open `/invite/<token>` and must use the invited email.
-15. Confirm the Auth redirect URLs if you will deploy (see [Supabase setup](/docs/supabase)).
+15. Confirm the Auth redirect URLs if you will deploy (see [Supabase setup](./supabase.md)).
 
 ## Demo logins (after seed)
 
@@ -56,4 +56,4 @@ Never use these emails for a real client. They are fictional `@example.com` iden
 - A client contact sees only assigned projects
 - File download works for shared files and 404s for everyone else
 
-If a step fails, use [Troubleshooting](/docs/troubleshooting), then open a GitHub issue.
+If a step fails, use [Troubleshooting](./troubleshooting.md), then open a GitHub issue.
